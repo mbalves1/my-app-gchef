@@ -14,29 +14,31 @@
       </q-input>
       <div class="flex--row card">
         <div class="card--revenues">
-          Clientes
+          <CommonCard title="Clientes" />
         </div>
         <div class="card--customers">
           Busted
         </div>
       </div>
-      <q-card class="my-card">
-        <q-card-section class="my-card--main">
-        Murio
-        </q-card-section>
-      </q-card>
-      <q-card class="my-card">
-        <q-card-section>
-        Murio
-        </q-card-section>
-      </q-card>
-      <q-card class="my-card">
-        <q-card-section>
-        Murio
-        </q-card-section>
-      </q-card>
+      <div>
+        <q-card class="my-card">
+          <q-card-section class="my-card--main">
+          Murio
+          </q-card-section>
+        </q-card>
+        <q-card class="my-card">
+          <q-card-section>
+          Murio
+          </q-card-section>
+        </q-card>
+      </div>
     </div>
     <div>
+      <q-card class="my-card">
+        <q-card-section>
+        Murio
+        </q-card-section>
+      </q-card>
       <q-card class="my-card">
         <q-card-section>
         Murio
@@ -52,7 +54,12 @@
 </template>
 
 <script>
+import CommonCard from '../components/CommonCard';
+
 export default {
+  components: [
+    CommonCard,
+  ],
   name: 'PageIndex',
 };
 </script>
@@ -62,7 +69,7 @@ export default {
     width: 500px;
     height: 500px;
 
-    @media screen and (max-width:1280px){
+    @media screen and (max-width:600px){
       width: 100%;
     }
   }
@@ -75,14 +82,10 @@ export default {
   display: flex;
   text-align: center;
 
-  @media screen and (max-width:1280px){
-    width: 100%;
-  }
-
   &--revenues,
   &--customers {
     padding: 40px;
-    margin: 10px 0px;
+    margin: 10px 0px 15px;
     width: 100%;
     // border:1px solid black;
     box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%);
@@ -90,6 +93,10 @@ export default {
     vertical-align: top;
     background: #fff;
     position: relative;
+  }
+
+  &--customers {
+    margin-left: 20px;
   }
 }
 </style>
