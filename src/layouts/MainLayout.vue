@@ -12,10 +12,9 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Relatório de promoções
         </q-toolbar-title>
 
-        <div>Grand Chef v. Online 2.0</div>
       </q-toolbar>
     </q-header>
 <!--
@@ -107,6 +106,7 @@ export default {
 </script>
 <style scoped>
 .q-layout__section--marginal {
-  background: rgb(184, 183, 183);
+  background: #FFF;
+  color: #222;
 }
 </style>

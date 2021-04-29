@@ -7,7 +7,7 @@
           label-color="orange"
           outlined
           v-model="model"
-          label="Outlined"
+          label="Tipo"
           style="width: 140px;"
         />
       </div>
