@@ -46,13 +46,28 @@
             <div class="flex"
               style="
               display:flex;
-              justify-content:center;"
+              justify-content:center;
+              flex-direction: row;
+              aligm-iten:center ;"
             >
               <Barchart
                 style="width: 150px !important;
                 height: 150px !important;
-                display:flex;
-                justify-content:center;" />
+                justify-content:center;"
+                class="barchart"
+              />
+              <div class="barchart-text">
+                <p style="font-size:14px;font-weight: bold;">Promoções mais utilizadas</p>
+                <p>
+                  <b class="circle"></b><b>Taxa de entrega grátis</b> (R$ 300,00)
+                </p>
+                <p>
+                  <b class="circle-m"></b><b>Promoção de Segunda-feira</b> (R$ 150,00)
+                </p>
+                <p>
+                  <b class="circle-t"></b><b>Promoção de Terça-feira</b> (R$ 150,00)
+                </p>
+              </div>
             </div>
           </q-card-section>
         </q-card>
@@ -131,6 +146,7 @@ export default {
   name: 'PageIndex',
   data() {
     return {
+      label: ['a', 'b', 'c'],
       chartData: {
         Books: 24,
         Magazine: 30,
@@ -163,7 +179,7 @@ export default {
     width: 500px;
     height: 300px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 800px) {
       width: 325px;
     }
 
@@ -172,8 +188,9 @@ export default {
       width: 500px;
       height: 210px;
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 800px) {
         width: 325px;
+        height: auto;
       }
     }
   }
@@ -250,4 +267,51 @@ export default {
     margin-top: 20px !important;
   }
 }
+
+.barchart {
+  display:flex;
+}
+
+.barchart-text {
+  font-size: 10px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 40px;
+
+  & > p {
+    align-items: center;
+    margin-top: 0px;
+  }
+
+}
+
+// sorry
+.circle{
+  content: '';
+  border-radius:50%;
+  border:2px solid orange;
+  background: orange;
+  padding: 1px 6px;
+  margin: 5px;
+}
+
+.circle-t{
+  content: '';
+  border-radius:50%;
+  border:2px solid #EF6C01;
+  background: #EF6C01;
+  padding: 1px 6px;
+  margin: 5px;
+}
+
+.circle-m{
+  content: '';
+  border-radius:50%;
+  border:2px solid #F28A34;
+  padding: 1px 6px;
+  margin: 5px;
+  background: #F28A34;
+}
+
 </style>
