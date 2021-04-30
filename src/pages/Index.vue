@@ -146,16 +146,13 @@ export default {
   name: 'PageIndex',
   data() {
     return {
-      label: ['a', 'b', 'c'],
+      // label: ['a', 'b', 'c'],
       chartData: {
         Books: 24,
         Magazine: 30,
         Newspapers: 10,
       },
       model: null,
-      // options: [
-      //   'Google', 'Facebook', 'Twitter', 'Apple', 'Oracle',
-      // ],
       cash: 300,
     };
   },
@@ -265,6 +262,12 @@ export default {
 
   @media screen and (max-width: 600px) {
     margin-top: 20px !important;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px !important;
+    width: 100%;
   }
 }
 
@@ -290,8 +293,8 @@ export default {
 .circle{
   content: '';
   border-radius:50%;
-  border:2px solid orange;
-  background: orange;
+  border:2px solid $our-orange;
+  background: $our-orange;
   padding: 1px 6px;
   margin: 5px;
 }
@@ -299,8 +302,8 @@ export default {
 .circle-t{
   content: '';
   border-radius:50%;
-  border:2px solid #EF6C01;
-  background: #EF6C01;
+  border:2px solid $our-orange-dark;
+  background: $our-orange-dark;
   padding: 1px 6px;
   margin: 5px;
 }
@@ -308,10 +311,10 @@ export default {
 .circle-m{
   content: '';
   border-radius:50%;
-  border:2px solid #F28A34;
+  border:2px solid $our-orange-ligth;
   padding: 1px 6px;
   margin: 5px;
-  background: #F28A34;
+  background: $our-orange-ligth;
 }
 
 </style>

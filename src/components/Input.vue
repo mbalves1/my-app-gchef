@@ -9,6 +9,7 @@
           v-model="model"
           label="Tipo"
           style="width: 140px;"
+          :options="options"
         />
       </div>
       <div id="q-app" style="width: 140px !important; margin-left:10px !important;">
@@ -43,6 +44,10 @@ export default {
   data() {
     return {
       date: '2021/04/27',
+      model: null,
+      options: [
+        'Percentage', 'Quantidade',
+      ],
     };
   },
 };

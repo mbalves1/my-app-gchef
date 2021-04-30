@@ -17,7 +17,9 @@ export default {
         ],
         datasets: [
           {
+            label: 'Faturamento',
             data: [100, 200, 150, 200, 300, 200, 400, 500],
+            // turn off to make a gray area
             backgroundColor: 'transparent',
             borderColor: 'orange',
             pointBackgroundColor: 'orange',
