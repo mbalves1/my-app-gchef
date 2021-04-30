@@ -2,7 +2,7 @@
 
 My-App Grand Chef
 Project presented for the Front End opportunity for the Grand Chef company.
-The project was developed with Vue Js, Quasar and ChartJs. It is the representation of a layout to inform the billing and the best-selling products. The purpose of the program is to show the development of layouts
+The project was developed with Vue Js, Quasar and ChartJs. It is the representation of a layout to inform the billing and the best-selling products. The purpose of the program is to show the development of layouts.
 
 ## Install the dependencies
 ```bash
