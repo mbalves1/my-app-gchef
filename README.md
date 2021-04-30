@@ -1,4 +1,4 @@
-# Quasar App (myapp)
+# Grand Chef - Reports
 
 My-App Grand Chef
 Project presented for the Front End opportunity for the Grand Chef company.
